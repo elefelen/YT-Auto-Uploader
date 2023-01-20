@@ -1,0 +1,445 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="850.4,6791.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="59">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="777.6,6726.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="path" />
+      <Variable x:TypeArguments="x:Boolean" Name="fileExists" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:String" Name="description" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="715.2,1036.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence sap:VirtualizedContainerService.HintSize="540,869.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter video title:" Title="Title.">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">title</CSharpReference>
+              </OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <If sap:VirtualizedContainerService.HintSize="477.6,476" sap2010:WorkflowViewState.IdRef="If_5">
+            <If.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">title == String.Empty</CSharpValue>
+              </InArgument>
+            </If.Condition>
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="400,197.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_4">
+                  <ui:MessageBox.Text>
+                    <InArgument x:TypeArguments="x:Object">
+                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">"Please complete the text field."</CSharpValue>
+                    </InArgument>
+                  </ui:MessageBox.Text>
+                </ui:MessageBox>
+              </Sequence>
+            </If.Then>
+          </If>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+      <ui:InterruptibleDoWhile.Condition>
+        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">title == String.Empty</CSharpValue>
+      </ui:InterruptibleDoWhile.Condition>
+    </ui:InterruptibleDoWhile>
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="715.2,1036.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence sap:VirtualizedContainerService.HintSize="540,869.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="477.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Enter video description:" Title="Description.">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">description</CSharpReference>
+              </OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <If sap:VirtualizedContainerService.HintSize="477.6,476" sap2010:WorkflowViewState.IdRef="If_6">
+            <If.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">description == String.Empty</CSharpValue>
+              </InArgument>
+            </If.Condition>
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="400,197.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_5">
+                  <ui:MessageBox.Text>
+                    <InArgument x:TypeArguments="x:Object">
+                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"Please complete the text field."</CSharpValue>
+                    </InArgument>
+                  </ui:MessageBox.Text>
+                </ui:MessageBox>
+              </Sequence>
+            </If.Then>
+          </If>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+      <ui:InterruptibleDoWhile.Condition>
+        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">description == String.Empty</CSharpValue>
+      </ui:InterruptibleDoWhile.Condition>
+    </ui:InterruptibleDoWhile>
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="715.2,1757.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="680,1590.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Private: Input Dialog" sap:VirtualizedContainerService.HintSize="617.6,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the path to the file you want to upload to YouTube:" Title="The path to your file.">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">path</CSharpReference>
+              </OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+          <If sap:VirtualizedContainerService.HintSize="617.6,1143.2" sap2010:WorkflowViewState.IdRef="If_1">
+            <If.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">path != String.Empty</CSharpValue>
+              </InArgument>
+            </If.Condition>
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="540,767.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:FileExistsX DisplayName="File Exists" sap:VirtualizedContainerService.HintSize="477.6,134.4" sap2010:WorkflowViewState.IdRef="FileExistsX_2">
+                  <ui:FileExistsX.Exists>
+                    <OutArgument x:TypeArguments="x:Boolean">
+                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">fileExists</CSharpReference>
+                    </OutArgument>
+                  </ui:FileExistsX.Exists>
+                  <ui:FileExistsX.Path>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">path</CSharpValue>
+                    </InArgument>
+                  </ui:FileExistsX.Path>
+                </ui:FileExistsX>
+                <If sap:VirtualizedContainerService.HintSize="477.6,480.8" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">!fileExists</CSharpValue>
+                    </InArgument>
+                  </If.Condition>
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="400,197.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Error" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2">
+                        <ui:MessageBox.Text>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"There is no such file in the given path: " + path + "."</CSharpValue>
+                          </InArgument>
+                        </ui:MessageBox.Text>
+                      </ui:MessageBox>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="400,197.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Error" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+                  <ui:MessageBox.Text>
+                    <InArgument x:TypeArguments="x:Object">
+                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"Please complete the text field."</CSharpValue>
+                    </InArgument>
+                  </ui:MessageBox.Text>
+                </ui:MessageBox>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+      <ui:InterruptibleDoWhile.Condition>
+        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">!fileExists</CSharpValue>
+      </ui:InterruptibleDoWhile.Condition>
+    </ui:InterruptibleDoWhile>
+    <Sequence sap:VirtualizedContainerService.HintSize="715.2,2663.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: YouTube" sap:VirtualizedContainerService.HintSize="531.2,2551.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="497.6,2334.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="enteredPath" />
+                <Variable x:TypeArguments="x:String" Name="enteredTitle" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'YT-ICON'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.youtube.com/" DesignTimeRectangle="1704, 157, 30, 30" DesignTimeScaleFactor="1.25" FriendlyName="'YT-ICON'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;div&amp;gt;ytd-masthead&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ytd-topbar-menu-button-renderer&amp;gt;div&amp;gt;a&amp;gt;yt-icon-button&amp;gt;button&amp;gt;yt-icon' parentid='button' tag='YT-ICON' /&gt;" FuzzyAccuracy="0.4" FuzzySelectorArgument="&lt;webctrl type='' parentid='button' tag='YT-ICON' class='style-scope ytd-topbar-menu-button-renderer' aaname='' /&gt;" Guid="1e279376-46f1-411c-9fb2-bd4c2c92c8f5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADpSURBVFhH7ZOBCcQgDAB/G/foHt2je7iHe7hH9/C5hxQ/plBq+5YngePB+slpzCuEUJ6Ai2hcROMiGhfRNCLLspSc82WQT9ewaERijGVd189vL5JH17AwRTiJXj8DeR4pIm235E6J8J04so98CNAmYq9dt4tIkHeapk1O771VJKXUTE2XCCeZ53lDrpl99Tr76v9ZdImwdiR0AUtuiAh5uD3aI0JdIro1fCcoUq9bpxcZgtzDpkaK1iM8VETg5vQkwc9F9jglcpT/EZGX3cvehFg0IjwkTnIV1sO0aERG4SIaF9G4yDehvAFcLQ3fHX29gwAAAABJRU5ErkJggg==" InformativeScreenshot="0b74b6d3ad48ed718d4d1841a1ca8a27.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='YouTube' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Upload video'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.youtube.com/" DesignTimeRectangle="1694, 207, 221, 50" DesignTimeScaleFactor="1.25" FriendlyName="'Upload video'" FullSelectorArgument="&lt;webctrl aria-role='link' tag='TP-YT-PAPER-ITEM' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='link' tag='TP-YT-PAPER-ITEM' type='' class='style-scope ytd-compact-link-renderer' aaname='                        ' check:innerText='Upload video' /&gt;" Guid="30ee69ed-5536-4001-afb7-d563fa76b935" ImageBase64="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" InformativeScreenshot="4fafc176c060937844d734d6f1f89d3c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='YouTube' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Select files'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://studio.youtube.com/channel/UCYrXZSu71XxtebCLbHOLxqA/videos/upload?d=ud&amp;filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" DesignTimeRectangle="913, 712, 112, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Select files'" FullSelectorArgument="&lt;webctrl parentid='select-files-button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='select-files-button' tag='DIV' type='' class='label style-scope ytcp-button' aaname='Select files' check:innerText='SELECT FILES' /&gt;" Guid="da369c99-02d2-4dae-b861-1edfef312620" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHQAAAAxCAYAAAALD434AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAS+SURBVHhe7Zz9i5VFFMf9B5aiVt0XW9dd777R1btvd+/u3jWNIs223AhZERWKDCpQ6wfzpVTMcMutyLUMe9HKqOjHAjESe4EgiKCoJILIIpGISLGUtNPznZhh5nnm2TtLS7c9nR8+3H2eOXOeM/OdmTMzP+y0lpYWEvgggjJDBGXGtAWvEgl8EEGZIYIyQwRlhgjKDBGUGSIoM0RQZoigzBBBmSGCMkMEZYYIygwRlBkiKDNEUGYkBO19+kdqWjlClXM7qKKiQv02Dm2iwt7vjE3x4G80Z+k6VZ5Gdv3rjl3nzo+c79j0PPE1zWjrS/jQoAw22r548By13nWAZs5bpMqvnN1G9Yvvoe6Rz2jB4T+D4tP44gqpj3p9B36mmp5lTny6LXiP8rhvDer7/Grs+ojn6vVvUE1+UJVdXlVHdQtXU/u296L2XnL8OoLmR0+YTprR1h85vUX94hmd1rH9A2VnN7hq3rXKLs78jW85diGCItCarqUJX3WL1lDhqW+Vbe/+0zSrOGxiqs3f7MSY2/IOFQ/9TpnhnaY+bFDmi7d796eJeELah3qTIahuQ9x//ZJ7qf+5X6JYzlHD4H2ObXXHDXRZZbV617zmcRp4+Q/j1wg68NIFahh6IGkUjYDsuteUg6sWrqL+538NFmqigpbqhOKh89R462blL7Nil2qsKotmZftDx02De5855dYLjEMTaj8ZguI7+J7PBszf+LaywyDGYNbvux/7Qk2+K2ZlnEFpBNXB+RqBsvrFd5uZUi5B83u+pOlNXSVFy219N7VsvDg0ofb/hqBNK3crO/w6ZdEgbr1jX/Sdv1dD/d47Q53R7yG0waF2oZ2Q3fCm8jV3+XYaeOViohwpo33b+1QYO+m8n8qC6hla23ebSTvjkZpDsXxhVORHv3LWaGA32IceTRMVNO5Ho+s2r9qjnhOjtQT/ZUF92P7sHIq0N/v6tWrQpk04R1BQGPue5gzeb5IumJm9hnIPHjM7KrvBvk1D6537E3YhgqZtinSOSF1+SvBPBPWBHTzsJkNQ36bI3gQCxINdvT55APRV6+1jUZkrbEJQTfGFM5TbdERtj+EAAmejrXP8WDBeB01U0FKdUI4Z6huwOmdNhqD4Dr7ns4mDlbLrkU8os3yHEhT1MXttUVMFNUQCYnZiN1XTdaM6p5ZL0P9jDk2jsO8HlVfhw94EGkE7d33sHE30exAPvFyCdj/6OVU25krucrGRSCubSoLiHArR4kcTjU5BOgUAIyg6CB2lltbo3GluIKwZWpW7To3+0AaH2oV2gn0OxfKLZ1WGGDcfZXcOxSqUGX5Y2TXctIGKL541ZfYMtQews+R27PjQJF59U4Qcgue0HJp2kxK/KfLZ6eSvOyHkpqjnyW/UO/hErPjbd5tlUw5B09qCGyzcZGlBfZsioG+KcJmg9zHGNvIbnEMLe09GU3nEdBIqxu8N7QanEb/L9aE7QneCzwbYHQb6nv2JmlePmhjRUJyhbRubcgiqY48Dv/CvBU3DnuEQDJOptjBkTh/VnUvUzjd4lytMTURQZoigzBBBmSGCMkMEZYYIygwRlBkiKDNEUGaIoMwQQZkhgjJDBGWGCMoMEZQZ8t84WdFCfwGTAiWsoMbDkgAAAABJRU5ErkJggg==" InformativeScreenshot="1ad452fe439e154bb8362acc20e5c77a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,953.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
+                <ui:InterruptibleDoWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,786.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="234, 506, 423, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="888a37ab-c422-42f8-9fdb-9d5eb908bf06" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAasAAAAYCAYAAABEONICAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACASURBVHhe7dUhAcAwEMDAyXr/5GW1rGQGAg4cioB8M3MAoMysAMh7s9rdXwSAArMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDy3qwAoMqsAIibcwEttEqboUKCDgAAAABJRU5ErkJggg==" InformativeScreenshot="f0abdeeb8c3abadd05d634bfd752ddd7.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="157, 506, 67, 20" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAYCAYAAACoaOA9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFaSURBVFhH7ZTtEQQRDIavLNWoRS1K0clW4pBdEiLWnF83MfPOjpXw5vHxMcZEFS+FI0jhCFI4ghSOIIUjSOEIInBciEMLDo+F6FDs5W3N/UcNcN4WrHAEKRxhjIu1/ipXEdoVvW1jVDbm0ODgC62Ltz79Qe3y0aI5YH2H8u8ngOS1Z+DR1GPJox6OwSmL4gJyAGMO9EBpZko4yrc+IKN3fHB3/45H+bXoOseYI3p8A4e2+QNM+y5F0onb6cD/6BjZiGJuBjMJFqyFQV2tcPDQrUdydj2eOjnFKd8kOGSM2Tl6BVLr4FCvTPEQBDnbHo/CEXZ90AoOnIJaWBYs+COcHY+n4DC7LmsBh7li/Xsxel3A2fZ48EHOfbozCUBAO0/0Bg4qpPTpSRq9LuAkiR4ZeMfgPP9wm821vlbde5MLhAV/gpM19biCo6JSOIIUjiCFI0jhCFI4U5n4BcDosF6Iti/0AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="234, 506, 423, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="888a37ab-c422-42f8-9fdb-9d5eb908bf06" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAasAAAAYCAYAAABEONICAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACASURBVHhe7dUhAcAwEMDAyXr/5GW1rGQGAg4cioB8M3MAoMysAMh7s9rdXwSAArMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDyzAqAPLMCIM+sAMgzKwDy3qwAoMqsAIibcwEttEqboUKCDgAAAABJRU5ErkJggg==" InformativeScreenshot="f0abdeeb8c3abadd05d634bfd752ddd7.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="157, 506, 67, 20" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAYCAYAAACoaOA9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFaSURBVFhH7ZTtEQQRDIavLNWoRS1K0clW4pBdEiLWnF83MfPOjpXw5vHxMcZEFS+FI0jhCFI4ghSOIIUjSOEIInBciEMLDo+F6FDs5W3N/UcNcN4WrHAEKRxhjIu1/ipXEdoVvW1jVDbm0ODgC62Ltz79Qe3y0aI5YH2H8u8ngOS1Z+DR1GPJox6OwSmL4gJyAGMO9EBpZko4yrc+IKN3fHB3/45H+bXoOseYI3p8A4e2+QNM+y5F0onb6cD/6BjZiGJuBjMJFqyFQV2tcPDQrUdydj2eOjnFKd8kOGSM2Tl6BVLr4FCvTPEQBDnbHo/CEXZ90AoOnIJaWBYs+COcHY+n4DC7LmsBh7li/Xsxel3A2fZ48EHOfbozCUBAO0/0Bg4qpPTpSRq9LuAkiR4ZeMfgPP9wm821vlbde5MLhAV/gpM19biCo6JSOIIUjiCFI0jhCFI4U5n4BcDosF6Iti/0AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">path</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NGetText DisplayName="Get Text 'File name'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="234, 506, 423, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text File name'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;ctrl name='File name:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;ctrl name='File name:' role='editable text' automationid='' /&gt;" Guid="eb6db65c-6034-4e49-ad98-1afe61c8302c" InformativeScreenshot="23c7c711859aa3d2721d6952a470441a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="157, 506, 67, 20" ElementType="Text" FriendlyName="'File name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;&lt;ctrl name='File name:' role='text' automationid='' check:text='File name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAYCAYAAACoaOA9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFaSURBVFhH7ZTtEQQRDIavLNWoRS1K0clW4pBdEiLWnF83MfPOjpXw5vHxMcZEFS+FI0jhCFI4ghSOIIUjSOEIInBciEMLDo+F6FDs5W3N/UcNcN4WrHAEKRxhjIu1/ipXEdoVvW1jVDbm0ODgC62Ltz79Qe3y0aI5YH2H8u8ngOS1Z+DR1GPJox6OwSmL4gJyAGMO9EBpZko4yrc+IKN3fHB3/45H+bXoOseYI3p8A4e2+QNM+y5F0onb6cD/6BjZiGJuBjMJFqyFQV2tcPDQrUdydj2eOjnFKd8kOGSM2Tl6BVLr4FCvTPEQBDnbHo/CEXZ90AoOnIJaWBYs+COcHY+n4DC7LmsBh7li/Xsxel3A2fZ48EHOfbozCUBAO0/0Bg4qpPTpSRq9LuAkiR4ZeMfgPP9wm821vlbde5MLhAV/gpM19biCo6JSOIIUjiCFI0jhCFI4U5n4BcDosF6Iti/0AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">enteredPath</CSharpReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:InterruptibleDoWhile.Body>
+                <ui:InterruptibleDoWhile.Condition>
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">enteredPath != path</CSharpValue>
+                </ui:InterruptibleDoWhile.Condition>
+              </ui:InterruptibleDoWhile>
+              <uix:NClick ClickType="Single" DisplayName="Click 'open'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="696, 538, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="d6ca5bc7-af6f-4661-81e5-ae1be9c4309f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAlCAYAAACeVr0yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGPSURBVHhe7ZbRlYMgEEXTkz/WQjO0QiuUYgd2QHxMjIBovjxxxnf33JNdwexurqCvcRwT1S9DGvEbcp5nqtBuSKKL05DDMFAFAoY0IGBIAwKGNCBgSAMChjQgYEgDAoY0IGBIAwKVIX3Mf97GFJLrzHuKQFlIn3LDJpyEjckXx54kUBUyBztYfXks+t3xJwgUhZTVGH1vbNGFNC1fwcnPCDsFl1yY8v+S6VwE1Xhx/jC4hKHo5VUox+8j0BNSltzJ9lmHlu1WYsr4J0ixanPEMm71O9aA9cVxtCP8U2A7ZLvVVqsW89sVtq7C7fvtQljM59/vXgxMh6wifOd84uX361OGXN8v22zfdxHoCfnrQzy4R9bz2pBnFwZDXqZ89v0n03asO7eM9zMKQ16obJ9toNynWV1yrAwh55ardH/eEi+uDzMMebHyAVd0VikiTcHXcw/mlbRPuQz5ZyVke4+0KWBIAwKGNCAwG/JJAoY0IGBIAwKGNCBgSAMChjQgOA1J9HAYkupzF5LqliFNOKY3sLR5B1oTAzIAAAAASUVORK5CYII=" InformativeScreenshot="3bc85c285e86d5dea61f4198b518d883.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,436.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
+                <ui:InterruptibleDoWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,269.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Title (required)'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="58a74656-f3f7-4145-9a48-6abe5692c493" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://studio.youtube.com/channel/UCYrXZSu71XxtebCLbHOLxqA/videos/upload?d=ud&amp;filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" DesignTimeRectangle="445, 483, 638, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'DAHU4415'" FullSelectorArgument="&lt;webctrl id='textbox' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='textbox' tag='DIV' type='' class='style-scope ytcp-social-suggestions-textbox' /&gt;" Guid="d125d528-16e8-4c30-82eb-f2ce3d93e4ed" InformativeScreenshot="645690e57ffcd89ac91b570fe768edae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="429, 448, 670, 101" FriendlyName="'Title (required)'" FullSelectorArgument="&lt;webctrl id='outer' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='outer' tag='DIV' type='' class='style-scope ytcp-form-input-container' aaname='' check:innerText='Title (required)&amp;#xD;&amp;#xA;DAHU4415' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">enteredTitle</CSharpReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:InterruptibleDoWhile.Body>
+                <ui:InterruptibleDoWhile.Condition>
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">enteredTitle != title</CSharpValue>
+                </ui:InterruptibleDoWhile.Condition>
+              </ui:InterruptibleDoWhile>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACp0lEQVRYR8XXz0tUURQH8K8/8hZiYfmDmqgLuQhrE+1diLRxldAfEIQQBBJIIkHQKqpFG0FIEVsFQlGJRokEgqFgmo7m2GCvH8yEjDkkIaLl6XsfDoGc12g4rwufWZxz7j2H92OYgYj8V2owTGowTGowTFhdXfWt0Dda2JTe9J3kjzwq+It88mvXKXPGEmXOTdEPyvSFtRYROk6XrD3Tae3lfmvvxqztnrf26WdrBzesHRZr39AkzdI7hYtP0ziNrlg7xP0v6XHU2q4+a+/w7CtN1tactjbvMPu53v46CBQ/Abo3gF/+XcmxceDVSeCY37wQyBtgc60wl2LAUAlQhHPAWQZ+bi0Iw3mgFjeBJi0ZhnvAdTwE2rVkGHqBB3gNPNOSgcrLRVpbRUpL9fwOsPcA4sCwlgzkBlhfF4nHRRoa9Jpt+gSMg09jVEsGKisTSaX4Jba5enpEqqr02iySwJwbYE5LBto6gFvptEhzs0hRkb4nQAL4whEQ05KBtAEya2JCpL5e36f4CiTxYTeuQGa5K9HYqO9TLLgBduUWuNXRIRKJ6HsC8BYk3AAzWjLQ1gHGxkTq6vTaLDjAPN4DI1oykBtgbU1keVmkpUXEGL1uG/gWTGEM6NeSgSorRbq6RKqr9fwOsPcQeoBOLRkoP1+P/4NBsP1t4JqWDEM7cAsNQI2WDEMj2L4Y2DMJvNAKcolfQjNHAf4m4ToFRKb5QGiFucDXb7rWb8tljHEfqDCm8KoxFx4Z0zZiTF/CmJGkMbOLxnzkq5akFKVpOYslcrVJt9edwbNGeebzXmPu3zDm4gljSlxPv7fneb44vaUpilGCkp5XsOh5+8TzDtAhqqQjWVSQq93PvXvdGe4sd2aUXI85yvTlNdH/MIRFDYZJDYZJDYZH8BtrTS5QuubtDwAAAABJRU5ErkJggg==" InformativeScreenshot="9774cc521859dd4425009a7555434974.jpg" Selector="&lt;html app='chrome.exe' title='YouTube' /&gt;" Url="https://www.youtube.com/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
