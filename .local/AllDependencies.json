@@ -20756,15 +20756,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tymon\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "YT Auto Uploader",
       "projectName": "YT Auto Uploader",
-      "projectPath": "C:\\Users\\Tymon\\Documents\\GitHub\\projekt\\YT-Auto-Uploader\\.local",
-      "packagesPath": "C:\\Users\\Tymon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tymon\\Documents\\GitHub\\projekt\\YT-Auto-Uploader\\.local"
+      "projectPath": "C:\\Users\\User\\Desktop\\YT Auto Uploader\\.local",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\YT Auto Uploader\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -20795,7 +20795,7 @@
             "version": "[22.10.4, 22.10.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Tymon\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\User\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
